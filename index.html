@@ -11,7 +11,7 @@
       <div class="header-item1">
         <div class="header-logo">
           <a><img src="http://placehold.it/150x100" width="150" height="150" alt="Логотип интернет-магазина Gllacy"></a>
-      </div>
+        </div>
         <nav class="menu">
           <ul class="menu-list">
             <li class="active"><a href="#">Каталог</a>
@@ -29,63 +29,89 @@
         </nav>
       </div>
       <div class="header-item2">
-          <a class="item2-search" href="#">Поиск</a>
-          <ul class="user-profile">
-            <li class="profile-signin"><a href="#">Вход</a></li>
-          </ul>
+        <span class="search-block">
+          <a class="link-search" href="#">Поиск</a>
+          <form action="#" id="search-form" method="GET">
+            <input type="text" name="search-form" placeholder="Что ищем?">
+          </form>
+        </span>
+        <ul class="user-profile">
+          <li class="profile-signin"><a href="#">Вход</a></li>
+          <div class="signin-popup">
+            <form action="#" id="signin-form" method="GET">
+              <input type="text" name="signin-form" placeholder="Электронная почта"><br>
+              <input type="password" name="signin-form" value="" placeholder="Пароль"><br>
+              <button type="submit" name="button" form="signin-form">Войти</button>
+            </form>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
+        </ul>
+        <span class="shipcart-block">
           <a class="item2-shipcart" href="#">Пусто</a>
-          <span class="time-work">
-            С 10 до 20, ежедневно
-            <a href="tel:88124502525">8 812 450-25-25</a>
-          </span>
+        </span>
+        <span class="time-work">
+          С 10 до 20, ежедневно
+          <a href="tel:88124502525">8 812 450-25-25</a>
+        </span>
       </div>
     </header>
 
     <main>
         <section class="slider">
+          <h3 class="hidden-title">Слайды</h3>
           <ul class="slider-list">
-            <li class="list-image1">
+            <li id="brulee" class="list-image1">
               <img src="http://placehold.it/150x100" width="150" height="150" alt="Крем-брюле и пломбир с малиновым джемом">
-                <p>Крем-брюле и пломбир с малиновым джемом</p>
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
             </li>
             <li class="list-image2">
               <img src="http://placehold.it/150x100" width="150" height="150" alt="Шоколадный пломбир и лимонный сорбет">
-                <p>Шоколадный пломбири лимонный сорбет</p>
+              <p>Шоколадный пломбир и лимонный сорбет</p>
             </li>
             <li class="list-image3">
               <img src="http://placehold.it/150x100" width="150" height="150" alt="Пломбир с помадкой и клубничный щербет">
-                <p>Пломбир с помадкой и клубничный щербет</p>
+              <p>Пломбир с помадкой и клубничный щербет</p>
             </li>
           </ul>
         </section>
 
         <section class="control-block">
-          <!-- Здесь будет 3 <input type="radio"  -->
-          <div class="control-button"><a href="#">Дайте оба!</a></div>
+          <h3 class="hidden-title">Панель управления</h3>
+          <span class="radio-switch">
+            <input type="radio" name="switch">
+            <input type="radio" name="switch">
+            <input type="radio" name="switch">
+          </span>
+          <span class="control-button">
+            <a href="#">Дайте оба!</a>
+          </span>
         </section>
 
         <section class="banner-block">
+          <h3 class="hidden-title">Рекламный блок</h3>
           <div class="banner-item">
-              <h2>Малинка даром!</h2>
-              <p>
-                При покупке 2 кг любого фруктового мороженого,
-                добавим в ваш заказ добавим банку
-                малинового варенья бесплатно
-              </p>
-              <a href="#">Хочу варенье!</a>
+            <h2>Малинка даром!</h2>
+            <p>
+              При покупке 2 кг любого фруктового мороженого,
+              добавим в ваш заказ добавим банку
+              малинового варенья бесплатно
+            </p>
+            <a href="#">Хочу варенье!</a>
           </div>
           <div class="banner-item">
-              <h2>Шоколадки даром!</h2>
-              <p>
-                При покупке 2 кг пломбира, добавим в ваш
-                заказ упаковку вкуснейшей шоколадной
-                присыпки совершенно бесплатно.
-              </p>
-              <a href="#">Хочу шоколадки!</a>
+            <h2>Шоколадки даром!</h2>
+            <p>
+              При покупке 2 кг пломбира, добавим в ваш
+              заказ упаковку вкуснейшей шоколадной
+              присыпки совершенно бесплатно.
+            </p>
+            <a href="#">Хочу шоколадки!</a>
           </div>
         </section>
 
         <section class="hits-block">
+          <h3 class="hidden-title">Хиты нашего продутка</h3>
           <ul class="hits-list">
             <li>
               <img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -103,9 +129,7 @@
               <img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <span>355</span>
               <span>/кг</span>
-              <h3>
-                Сливочно-клубничное с присыпкой из белого шоколада
-              </h3>
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </li>
             <li>
               <img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -113,58 +137,62 @@
               <span>/кг</span>
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </li>
-        </ul>
+          </ul>
         </section>
 
         <section class="seo-block">
+          <h3 class="hidden-title">Подробнее о нашем магазине</h3>
           <h1>Магазин Глэйси - это оналайн- и офлайн-магазин по продаже мороженного собственного производства на развес</h1>
-          <div class="seo-item">
-            <div>
+          <ul class="seo-list">
+            <li class="seo-item">
               <p>
                 Все наше мороженное изготавливается на собственном производстве,
                 с использованием современного оборудования и проверенных временем технологий.
               </p>
-            </div>
-            <div>
+            </li>
+            <li class="seo-item">
               <p>
                 Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний,
                 с которыми нас связывает долговременное сотрудничество.
               </p>
-            </div>
-          </div>
-          <div class="seo-item">
-            <div>
+            </li>
+            <li class="seo-item">
               <p>
                 Для приготовления мороеженного используются настоящие сливки и молоко высочайшего качества.
                 Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
               </p>
-            </div>
-            <div>
+            </li>
+            <li class="seo-item">
               <p>
                 Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке,
                 который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </section>
 
         <section class="news-block">
+          <h3 class="hidden-title">Наши новости</h3>
           <article class="news-item">
+            <h3 class="hidden-title">Новости нашего блога</h3>
             <span>Новое в нашем блоке</span>
             <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
-            <div class="news-item">
-              <p>
-                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-              </p>
-                <!-- Здесь будет input type="text"  -->
-                <!-- Здесь будет <button>  -->
-            </div>
+          <div class="news-item">
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </p>
+            <form action="#" id="subscribe-form" method="GET">
+              <input type="text" name="subscribe-form" placeholder="Электронная почта">
+              <button type="submit" form="subscribe-form">Отправить</button>
+            </form>
+          </div>
         </section>
     </main>
 
     <section class="address-block">
+      <h3 class="hidden-title">Наше местонахождение</h3>
       <div class="address-maps"></div>
       <div class="address-item">
         <p>
@@ -190,20 +218,26 @@
         </ul>
       </div>
       <nav class="footer-menu">
-        <ul>
-          <li><a href="#">Для поставщиков</a></li>
-          <li><a href="#">Наши документы</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">О производстве</a></li>
-          <li><a href="#">Экологические стандарты</a></li>
-        </ul>
+        <a href="#">Для поставщиков</a>
+        <a href="#">Наши документы</a>
+        <a href="#">О производстве</a>
+        <a href="#">Экологические стандарты</a>
       </nav>
       <div class="footer-banner">
-        <img src="http://placehold.it/150x100" width="150" height="150" alt="HTML Academy 2017">
+        <img src="http://placehold.it/150x100" width="50" height="50" alt="HTML Academy 2017">
         <p>html academy</p>
         <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy 2017</a></p>
       </div>
     </footer>
+    <section id="callback" class="popup-callback">
+      <h3 class="hidden-title">Форма обратной связи</h3>
+      <span>Мы обязательно вам ответим!</span>
+      <form action="#" id="callback-form" method="GET">
+        <input type="text" name="callback-form" placeholder="Как вас зовут?"><br>
+        <input type="text" name="callback-form" placeholder="Ваша почта?"><br>
+        <textarea name="callback-form" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea><br>
+        <button type="submit" form="callback-form">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
