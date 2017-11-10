@@ -10,48 +10,99 @@
     <header>
       <div class="header-item1">
         <div class="header-logo">
-          <a><img src="img/logo.svg" width="150" height="150" alt="Логотип интернет-магазина Gllacy."></a>
+          <a>
+            <img src="img/logo.svg" width="150" height="150" alt="Логотип интернет-магазина Gllacy.">
+          </a>
         </div>
         <nav class="menu">
           <ul class="menu-list">
-            <li class="active"><a href="#">Каталог</a>
-              <ul class="popup-list">
-                <li><a href="#">Новинки</a></li
-                <li><a href="catalog.html">Сливочное</a></li>
-                <li><a href="#">Щербеты</a></li>
-                <li><a href="#">Фруктовый лед</a></li>
-                <li><a href="#">Мелорин</a></li>
+            <li class="menu-item item-active">
+              <a href="#">
+                <span class="menu-value">Каталог</span>
+              </a>
+              <ul class="popup-menu-list">
+                <li class="popup-menu-item">
+                  <a href="#">
+                    <span class="popup-menu-value">Новинки</span>
+                  </a>
+                </li>
+                <li class="popup-menu-item">
+                  <a href="catalog.html">
+                    <span class="popup-menu-value">Сливочное</span>
+                  </a>
+                </li>
+                <li class="popup-menu-item">
+                  <a href="#">
+                    <span class="popup-menu-value">Щербеты</span>
+                  </a>
+                </li>
+                <li class="popup-menu-item">
+                  <a href="#">
+                    <span class="popup-menu-value">Фруктовый лед</span>
+                  </a>
+                </li>
+                <li class="popup-menu-item">
+                  <a href="#">
+                    <span class="popup-menu-value">Мелорин</span>
+                  </a>
+                </li>
               </ul>
             </li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О Компании</a></li>
+            <li class="menu-item">
+              <a href="#">
+                <span class="menu-value">Доставка и оплата</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <span class="menu-value">О Компании</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
       <div class="header-item2">
-        <span class="search-block">
+        <div class="search-block">
           <a class="link-search" href="#">Поиск</a>
-          <form action="#" id="search-form" method="GET">
+          <form action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
             <input type="text" name="search-form" placeholder="Что ищем?">
           </form>
-        </span>
+        </div>
         <ul class="user-profile">
-          <li class="profile-signin"><a href="#">Вход</a></li>
-          <div class="signin-popup">
-            <form action="#" id="signin-form" method="GET">
-              <input type="text" name="signin-form" placeholder="Электронная почта"><br>
-              <input type="password" name="signin-form" value="" placeholder="Пароль"><br>
-              <button type="submit" name="button" form="signin-form">Войти</button>
-            </form>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </div>
+          <li class="profile-signin">
+            <a href="#">
+              <span class="visually-hidden">Вход</span>
+            </a>
+          </li>
+          <li class="signin-popup">
+            <div class="signin-popup-inner">
+              <form action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
+                <p class="signin-form-email">
+                  <input type="text" name="signin-form" id="signin-email" placeholder="Электронная почта">
+                  <label for="signin-email" class="visually-hidden">Электронная почта</label>
+                </p>
+                <p class="signin-form-password">
+                  <input type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль">
+                  <label for="signin-password">Пароль</label>
+                </p>
+                <p class="signin-form-submit">
+                  <button type="submit" name="button" form="signin-form">Войти</button>
+                </p>
+              </form>
+              <p class="signin-links">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </div>
+          </li>
         </ul>
-        <span class="shipcart-block">
-          <a class="item2-shipcart" href="#">Пусто</a>
-        </span>
+        <div class="shipcart-block">
+          <span class="item-shipcart">
+            <a href="#">Пусто</a>
+          </span>
+        </div>
         <span class="time-work">
-          С 10 до 20, ежедневно
+          <b>С 10 до 20, ежедневно</b>
           <a href="tel:88124502525">8 812 450-25-25</a>
         </span>
       </div>
@@ -79,9 +130,12 @@
         <section class="control-block">
           <h3 class="visually-hidden">Панель управления</h3>
           <span class="radio-switch">
-            <input type="radio" name="switch">
-            <input type="radio" name="switch">
-            <input type="radio" name="switch">
+            <input type="radio" id="switch1" name="switch" checked>
+            <label for="switch1" class="switch-modify"></label>
+            <input type="radio" id="switch2" name="switch">
+            <label for="switch2" class="switch-modify"></label>
+            <input type="radio" id="switch3" name="switch">
+            <label for="switch3" class="switch-modify"></label>
           </span>
           <span class="control-button">
             <a href="#">Дайте оба!</a>
@@ -111,31 +165,67 @@
         </section>
 
         <section class="hits-block">
-          <h3 class="visually-hidden">Хиты нашего продутка</h3>
+          <h3 class="visually-hidden">Раздел Хиты. Что чаще всего покупают.</h3>
           <ul class="hits-list">
             <li>
-              <img src="img/hits-ice-cream-1.jpg" alt="Хит продаж. Мороженное сливочное с апельсиновым джемом и цитрусовой стружкой.">
-              <span>310</span>
-              <span>/Кг</span>
-              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <div class="catalog-item-inner">
+                <div class="catalog-image">
+                  <img src="img/hits-ice-cream-1.jpg" width="150" height="150" alt="Мороженное. Сливочное с апельсиновым джемом и цитрусовой стружкой.">
+                  <span class="catalog-price">
+                    <b class="price-val">310</b>
+                    <small class="price-weight">/кг</small>
+                  </span>
+                </div>
+                <a href="#">
+                  <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                </a>
+                <button type="button" class="catalog-button">Быстрый просмотр</button>
+              </div>
             </li>
             <li>
-              <img src="img/hits-ice-cream-2.jpg" alt="Хит продаж. Мороженное сливочно-кофейное с кусочками шоколада.">
-              <span>380</span>
-              <span>/кг</span>
-              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <div class="catalog-item-inner">
+                <div class="catalog-image">
+                  <img src="img/hits-ice-cream-2.jpg" width="150" height="150" alt="Мороженное. Сливочно-кофейное с кусочками шоколада.">
+                  <span class="catalog-price">
+                    <b class="price-val">380</b>
+                    <small class="price-weight">/кг</small>
+                  </span>
+                </div>
+                <a href="#">
+                  <span>Сливочно-кофейное с кусочками шоколада</span>
+                </a>
+                <button type="button" class="catalog-button">Быстрый просмотр</button>
+              </div>
             </li>
             <li>
-              <img src="img/hits-ice-cream-3.jpg" alt="Хит продаж. Мороженное сливочно-клубничное с присыпкой из белого шоколада.">
-              <span>355</span>
-              <span>/кг</span>
-              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <div class="catalog-item-inner">
+                <div class="catalog-image">
+                  <img src="img/hits-ice-cream-3.jpg" width="150" height="150" alt="Мороженное. Сливочно-клубничное с присыпкой из белого шоколада.">
+                  <span class="catalog-price">
+                    <b class="price-val">355</b>
+                    <small class="price-weight">/кг</small>
+                  </span>
+                </div>
+                <a href="#">
+                  <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                </a>
+                <button type="button" class="catalog-button">Быстрый просмотр</button>
+              </div>
             </li>
             <li>
-              <img src="img/hits-ice-cream-4.jpg" alt="Хит продаж. Мороженное сливочное крем-брюле с карамельной подливкой.">
-              <span>415</span>
-              <span>/кг</span>
-              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <div class="catalog-item-inner">
+                <div class="catalog-image">
+                  <img src="img/hits-ice-cream-4.jpg" width="150" height="150" alt="Мороженное. Сливочное крем-брюле с карамельной подливкой.">
+                  <span class="catalog-price">
+                    <b class="price-val">415</b>
+                    <small class="price-weight">/кг</small>
+                  </span>
+                </div>
+                <a href="#">
+                  <span>Сливочное крем-брюле с карамельной подливкой</span>
+                </a>
+                <button type="button" class="catalog-button">Быстрый просмотр</button>
+              </div>
             </li>
           </ul>
         </section>
@@ -210,14 +300,32 @@
 
     <footer>
       <div class="footer-social">
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Vkontakte</a></li>
+        <h3 class="visually-hidden">Список социальных сетей.</h3>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
         </ul>
       </div>
       <nav class="footer-menu">
+        <h3 class="visually-hidden">Дополнительная навигация по сайту.</h3>
         <a href="#">Для поставщиков</a>
         <a href="#">Наши документы</a>
         <a href="#">О производстве</a>
@@ -232,10 +340,19 @@
     <section id="callback" class="popup-callback">
       <h3 class="visually-hidden">Форма обратной связи</h3>
       <span>Мы обязательно вам ответим!</span>
-      <form action="#" id="callback-form" method="GET">
-        <input type="text" name="callback-form" placeholder="Как вас зовут?"><br>
-        <input type="text" name="callback-form" placeholder="Ваша почта?"><br>
-        <textarea name="callback-form" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea><br>
+      <form action="https://echo.htmlacademy.ru/" id="callback-form" method="GET">
+      <p class="callback-name">
+        <input type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?">
+        <label for="callback-text-name" class="visually-hidden">Как вас зовут ?</label>
+      </p>
+      <p class="callback-mail">
+        <input type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?">
+        <label for="callback-text-mail" class="visually-hidden">Ваша почта?</label>
+      </p>
+      <p class="callback-area">
+        <textarea name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <label for="callback-text-area" class="visually-hidden">Напишите что-нибудь.</label>
+      </p>
         <button type="submit" form="callback-form">Отправить</button>
       </form>
     </section>
