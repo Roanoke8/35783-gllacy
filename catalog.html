@@ -137,7 +137,7 @@
               </td>
             </tr>
             <tr class="shipcart-rows">
-              <td colspan="5">
+              <td colspan="5" class="shipcart-totals">
                 <b>Итого: 750 руб.</b>
               </td>
             </tr>
@@ -149,10 +149,10 @@
           </table>
         </div>
       </div>
-      <span class="time-work">
+      <p class="time-work">
         <b>С 10 до 20, ежедневно</b>
         <a href="tel:88124502525">8 812 450-25-25</a>
-      </span>
+      </p>
     </div>
   </header>
   <main>
@@ -191,26 +191,26 @@
         </div>
         <fieldset class="fatty-filter">
           <legend>Жирность:</legend>
-          <input type="radio" id="0" value="0" name="fatty">
+          <input class="visually-hidden" type="radio" id="0" value="0" name="fatty">
           <label for="0">0%</label>
-          <input type="radio" id="10" value="10" name="fatty" checked>
+          <input class="visually-hidden" type="radio" id="10" value="10" name="fatty" checked>
           <label for="10">До 10%</label>
-          <input type="radio" id="30" value="30" name="fatty">
+          <input class="visually-hidden" type="radio" id="30" value="30" name="fatty">
           <label for="30">До 30%</label>
-          <input type="radio" id="over30" value="over30" name="fatty">
+          <input class="visually-hidden" type="radio" id="over30" value="over30" name="fatty">
           <label for="over30">Выше 30%</label>
         </fieldset>
         <fieldset class="filler-filter">
           <legend>Наполнители:</legend>
-          <input type="checkbox" id="chocolate" value="chocolate" name="filler" checked>
+          <input class="visually-hidden" type="checkbox" id="chocolate" value="chocolate" name="filler" checked>
           <label for="chocolate">Шоколадные</label>
-          <input type="checkbox" id="sugar" value="sugar" name="filler" checked>
+          <input class="visually-hidden" type="checkbox" id="sugar" value="sugar" name="filler" checked>
           <label for="sugar">Сахарные присыпки</label>
-          <input type="checkbox" id="fruit" value="fruit" name="filler">
+          <input class="visually-hidden" type="checkbox" id="fruit" value="fruit" name="filler">
           <label for="fruit">фрукты</label>
-          <input type="checkbox" id="syrop" value="syrup" name="filler">
+          <input class="visually-hidden" type="checkbox" id="syrop" value="syrup" name="filler">
           <label for="syrop">сиропы</label>
-          <input type="checkbox" id="jam" value="jam" name="filler">
+          <input class="visually-hidden" type="checkbox" id="jam" value="jam" name="filler">
           <label for="jam">джемы</label>
           <button type="submit" form="filter-form">Применить</button>
         </fieldset>
