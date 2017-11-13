@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.menu-list,
+.popup-menu-list,
+.user-profile,
+.slider-list,
+.hits-list,
+.seo-list,
+.social-list {
+  list-style: none;
+}
+.menu-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu-item > a:hover {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+.popup-menu-list {
+  background-color: #f8f7f4;
+}
+.popup-menu-item a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.popup-menu-item:first-child a {
+  font-weight: bold;
+}
+.popup-menu-item a:hover {
+  background-color: rgba(251, 222, 215, 0.5);
+}
+.active-item a{
+  color: #ffffff;
+
+  background-color: #d07058;
+}
+
+.search-block a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-signin a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.item-shipcart a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
