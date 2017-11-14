@@ -25,41 +25,27 @@
               </a>
               <ul class="popup-menu-list">
                 <li class="popup-menu-item">
-                  <a href="#">
-                    <span class="popup-menu-value">Новинки</span>
-                  </a>
+                  <a href="#">Новинки</a>
                 </li>
                 <li class="popup-menu-item">
-                  <a href="catalog.html">
-                    <span class="popup-menu-value">Сливочное</span>
-                  </a>
+                  <a href="catalog.html">Сливочное</a>
                 </li>
                 <li class="popup-menu-item">
-                  <a href="#">
-                    <span class="popup-menu-value">Щербеты</span>
-                  </a>
+                  <a href="#">Щербеты</a>
                 </li>
                 <li class="popup-menu-item">
-                  <a href="#">
-                    <span class="popup-menu-value">Фруктовый лед</span>
-                  </a>
+                  <a href="#">Фруктовый лед</a>
                 </li>
                 <li class="popup-menu-item">
-                  <a href="#">
-                    <span class="popup-menu-value">Мелорин</span>
-                  </a>
+                  <a href="#">Мелорин</a>
                 </li>
               </ul>
             </li>
             <li class="menu-item">
-              <a href="#">
-                <span class="menu-value">Доставка и оплата</span>
-              </a>
+              <a href="#">Доставка и оплата</a>
             </li>
             <li class="menu-item">
-              <a href="#">
-                <span class="menu-value">О Компании</span>
-              </a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
         </nav>
@@ -67,9 +53,11 @@
       <div class="header-item2">
         <div class="search-block">
           <a class="link-search" href="#">Поиск</a>
-          <form action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
-            <input type="text" name="search-form" placeholder="Что ищем?">
-          </form>
+          <div class="search-form">
+            <form action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
+              <input class="type-text" type="text" name="search-form" placeholder="Что ищем?">
+            </form>
+          </div>
         </div>
         <ul class="user-profile">
           <li class="profile-signin">
@@ -78,16 +66,16 @@
           <li class="signin-popup">
             <div class="signin-popup-inner">
               <form action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
-                <p class="signin-form-email">
-                  <input type="text" name="signin-form" id="signin-email" placeholder="Электронная почта">
+                <p class="form-email">
+                  <input class="type-text" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта">
                   <label for="signin-email" class="visually-hidden">Введите адрес электронной почты</label>
                 </p>
-                <p class="signin-form-password">
-                  <input type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль">
+                <p class="form-password">
+                  <input class="type-text"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль">
                   <label for="signin-password">Введите пароль</label>
                 </p>
-                <p class="signin-form-submit">
-                  <button type="submit" name="button" form="signin-form">Войти</button>
+                <p class="form-submit">
+                  <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
                 </p>
               </form>
               <p class="signin-links">
@@ -138,9 +126,9 @@
             <input class="visually-hidden" type="radio" id="switch3" name="switch">
             <label for="switch3" class="switch-modify"></label>
           </span>
-          <span class="control-button">
-            <a href="#">Дайте оба!</a>
-          </span>
+          <p class="control-button">
+            <a class="control-button btn" href="#">Давайте оба!</a>
+          </p>
         </section>
 
         <section class="banner-block">
@@ -152,7 +140,7 @@
               добавим в ваш заказ добавим банку
               малинового варенья бесплатно
             </p>
-            <a class="banner-link" href="#">Хочу варенье!</a>
+            <a class="banner-link btn" href="#">Хочу варенье!</a>
           </div>
           <div class="banner-item">
             <h2 class="banner-heading">Шоколадки даром!</h2>
@@ -161,70 +149,70 @@
               заказ упаковку вкуснейшей шоколадной
               присыпки совершенно бесплатно.
             </p>
-            <a class="banner-link" href="#">Хочу шоколадки!</a>
+            <a class="banner-link btn" href="#">Хочу шоколадки!</a>
           </div>
         </section>
 
         <section class="hits-block">
           <h3 class="visually-hidden">Раздел Хиты. Что чаще всего покупают.</h3>
           <ul class="hits-list">
-            <li>
+            <li class="hits-item">
               <div class="catalog-item-inner">
                 <div class="catalog-image">
-                  <img src="img/hits-ice-cream-1.jpg" width="150" height="150" alt="Мороженное. Сливочное с апельсиновым джемом и цитрусовой стружкой.">
+                  <img src="img/hits-ice-cream-1.jpg" width="267" height="267" alt="Мороженное. Сливочное с апельсиновым джемом и цитрусовой стружкой.">
                   <span class="catalog-price">
                     <b class="price-val">310</b>
                     <small class="price-weight">/кг</small>
                   </span>
                 </div>
                 <a href="#">
-                  <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                  <span class="catalog-invisble-button" href="">Быстрый просмотр</span>
+                  <span class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                  <span class="catalog-invisible-button btn">Быстрый просмотр</span>
                 </a>
               </div>
             </li>
-            <li>
+            <li class="hits-item">
               <div class="catalog-item-inner">
                 <div class="catalog-image">
-                  <img src="img/hits-ice-cream-2.jpg" width="150" height="150" alt="Мороженное. Сливочно-кофейное с кусочками шоколада.">
+                  <img src="img/hits-ice-cream-2.jpg" width="267" height="267" alt="Мороженное. Сливочно-кофейное с кусочками шоколада.">
                   <span class="catalog-price">
                     <b class="price-val">380</b>
                     <small class="price-weight">/кг</small>
                   </span>
                 </div>
                 <a href="#">
-                  <span>Сливочно-кофейное с кусочками шоколада</span>
-                  <span class="catalog-invisble-button" href="">Быстрый просмотр</span>
+                  <span class="product-name">Сливочно-кофейное с кусочками шоколада</span>
+                  <span class="catalog-invisible-button btn">Быстрый просмотр</span>
                 </a>
               </div>
             </li>
-            <li>
+            <li class="hits-item">
               <div class="catalog-item-inner">
                 <div class="catalog-image">
-                  <img src="img/hits-ice-cream-3.jpg" width="150" height="150" alt="Мороженное. Сливочно-клубничное с присыпкой из белого шоколада.">
+                  <img src="img/hits-ice-cream-3.jpg" width="267" height="267" alt="Мороженное. Сливочно-клубничное с присыпкой из белого шоколада.">
                   <span class="catalog-price">
                     <b class="price-val">355</b>
                     <small class="price-weight">/кг</small>
                   </span>
                 </div>
                 <a href="#">
-                  <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
-                  <span class="catalog-invisble-button" href="">Быстрый просмотр</span>
+                  <span class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
+                  <span class="catalog-invisible-button btn">Быстрый просмотр</span>
                 </a>
               </div>
             </li>
-            <li>
+            <li class="hits-item">
               <div class="catalog-item-inner">
                 <div class="catalog-image">
-                  <img src="img/hits-ice-cream-4.jpg" width="150" height="150" alt="Мороженное. Сливочное крем-брюле с карамельной подливкой.">
+                  <img src="img/hits-ice-cream-4.jpg" width="267" height="267" alt="Мороженное. Сливочное крем-брюле с карамельной подливкой.">
                   <span class="catalog-price">
                     <b class="price-val">415</b>
                     <small class="price-weight">/кг</small>
                   </span>
                 </div>
                 <a href="#">
-                  <span>Сливочное крем-брюле с карамельной подливкой</span>
-                  <span class="catalog-invisble-button" href="">Быстрый просмотр</span>
+                  <span class="product-name">Сливочное крем-брюле с карамельной подливкой</span>
+                  <span class="catalog-invisible-button btn" >Быстрый просмотр</span>
                 </a>
               </div>
             </li>
@@ -276,7 +264,7 @@
             </p>
             <form action="#" id="subscribe-form" method="GET">
               <input type="text" name="subscribe-form" placeholder="Электронная почта">
-              <button type="submit" form="subscribe-form">Отправить</button>
+              <button class="btn" type="submit" form="subscribe-form">Отправить</button>
             </form>
           </div>
         </section>
@@ -295,7 +283,7 @@
           <b>8 812 450-25-25</b>
           (c 10 до 20 ежедневно)
         </p>
-        <a href="#callback">Форма обратной связи</a>
+        <a href="#callback btn">Форма обратной связи</a>
       </div>
     </section>
 
@@ -343,18 +331,18 @@
       <p class="callback-content">Мы обязательно вам ответим!</p>
       <form action="https://echo.htmlacademy.ru/" id="callback-form" method="GET">
       <p class="callback-name">
-        <input type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?">
+        <input class="type-text"  type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?">
         <label for="callback-text-name" class="visually-hidden">Как вас зовут?</label>
       </p>
       <p class="callback-mail">
-        <input type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?">
+        <input class="type-text"  type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?">
         <label for="callback-text-mail" class="visually-hidden">Ваша почта?</label>
       </p>
       <p class="callback-area">
-        <textarea name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+        <textarea class="type-text"  name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
         <label for="callback-text-area" class="visually-hidden">Напишите что-нибудь.</label>
       </p>
-        <button type="submit" form="callback-form">Отправить</button>
+        <button class="btn" type="submit" form="callback-form">Отправить</button>
       </form>
     </section>
   </body>
