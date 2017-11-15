@@ -98,15 +98,15 @@
         </li>
       </ul>
       <div class="shipcart-block">
-        <span class="item-shipcart full-shipcart">
+        <span class="item-shipcart shipcart-full-bg">
           <a  class="shipcart-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
               <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
-              <circle class="shipcart-svg" fill="#ffffff" cx="6.984" cy="18" r="2"/>
-              <circle class="shipcart-svg"  fill="#ffffff" cx="15.984" cy="18" r="2"/>
-              <path class="shipcart-svg"  fill="#ffffff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+              <circle class="shipcart-full" fill="#ffffff" cx="6.984" cy="18" r="2"/>
+              <circle class="shipcart-full"  fill="#ffffff" cx="15.984" cy="18" r="2"/>
+              <path class="shipcart-full"  fill="#ffffff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
             </svg>
-            <span>2 товара</span>
+            <span class="shipcart-total">2 товара</span>
           </a>
         </span>
         <div class="shipcart-popup">
@@ -170,13 +170,13 @@
       <h3 class="visually-hidden">Хлебные крошки</h3>
 
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-list">
-          <a href="index.html">Главная</a>
+        <li class="breadcrumbs-item">
+          <a class="links" href="index.html">Главная</a>
         </li>
-        <li class="breadcrumbs-list">
-          <a href="catalog.html">Каталог</a>
+        <li class="breadcrumbs-item">
+          <a class="links"  href="catalog.html">Каталог</a>
         </li>
-        <li class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
           <a href="#">Сливочное</a>
         </li>
       </ul>
@@ -225,7 +225,7 @@
           <label for="syrop">сиропы</label>
           <input class="visually-hidden" type="checkbox" id="jam" value="jam" name="filler">
           <label for="jam">джемы</label>
-          <button type="submit" form="filter-form">Применить</button>
+          <button class="catalog-form-submit" type="submit" form="filter-form">Применить</button>
         </fieldset>
       </form>
     </section>
@@ -421,7 +421,7 @@
     <section class="page-block">
       <h3 class="visually-hidden">Нумерация страниц</h3>
       <ul class="page-list">
-        <li class="page-item">
+        <li class="page-item active-page">
           <a href="#">1</a>
         </li>
         <li class="page-item">
@@ -446,37 +446,39 @@
       <ul class="social-list">
         <li class="social-item">
           <a href="#">
+            <img src="img/twitter.svg" alt="twitter icon">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="social-item">
           <a href="#">
+            <img src="img/instagram.svg" alt="instagram">
             <span class="visually-hidden">Instagram</span>
           </a>
         </li>
         <li class="social-item">
           <a href="#">
+            <img src="img/fb.svg" alt="Facebook">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="social-item">
           <a href="#">
+            <img src="img/vk.svg" alt="Vkontakte">
             <span class="visually-hidden">Vkontakte</span>
           </a>
         </li>
       </ul>
     </div>
-    <nav class="footer-menu">
-      <h3 class="visually-hidden">Дополнительная навигация по сайту.</h3>
-      <a href="#">Для поставщиков</a>
-      <a href="#">Наши документы</a>
-      <a href="#">О производстве</a>
-      <a href="#">Экологические стандарты</a>
+    <nav class="footer-menu" aria-label="Дополнительная навигация по сайту.">
+      <a class="links fmenu-bold" href="#">Для поставщиков</a>
+      <a class="links" href="#">Наши документы</a>
+      <a class="links" href="#">О производстве</a>
+      <a class="links" href="#">Экологические стандарты</a>
     </nav>
     <div class="footer-banner">
-      <img src="http://placehold.it/150x100" alt="img" width="150" height="150">
-      <p>html academy</p>
-      <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy 2017</a></p>
+      <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy 2017">
+      <p>Сделано в <a class="links" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>©2017</p>
     </div>
   </footer>
 </body>
