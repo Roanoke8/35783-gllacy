@@ -77,23 +77,30 @@
           </li>
           <li class="signin-popup">
             <div class="signin-popup-inner">
-              <form action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
-                <p class="form-email">
+              <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
+                <span class="form-email">
                   <input class="type-text" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта">
                   <label for="signin-email" class="visually-hidden">Введите адрес электронной почты</label>
-                </p>
-                <p class="form-password">
+                </span>
+                <span class="form-password">
                   <input class="type-text"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль">
-                  <label for="signin-password">Введите пароль</label>
-                </p>
-                <p class="form-submit">
-                  <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
-                </p>
+                  <label for="signin-password" class="visually-hidden">Введите пароль</label>
+                </span>
+                <div class="button-container">
+                  <p class="form-submit">
+                    <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
+                  </p>
+                  <p class="signin-links">
+                    <a class="recovery-password" href="#">
+                      <span class="links">Забыли пароль?</span>
+                    </a>
+                    <a class="new-user" href="#">
+                      <span class="links">Новая регистрация</span>
+                    </a>
+                  </p>
+                </div>
               </form>
-              <p class="signin-links">
-                <a class="links" href="#">Забыли пароль?</a>
-                <a class="links" href="#">Новая регистрация</a>
-              </p>
+
             </div>
           </li>
         </ul>
