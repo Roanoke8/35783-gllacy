@@ -61,9 +61,9 @@
               <path class="search-svg-path" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
             </svg>
           </a>
-          <div class="search-form">
-            <form action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
-              <input class="type-text" type="text" name="search-form" placeholder="Что ищем?">
+          <div class="search-form-wrap">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
+              <input class="form-search-input" type="text" name="search-form" placeholder="Что ищем?">
             </form>
           </div>
         </div>
@@ -78,33 +78,28 @@
               </svg>
               <span>Вход</span>
             </a>
-          </li>
-          <li class="signin-popup">
-            <div class="signin-popup-inner">
-              <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
-                <span class="form-email">
-                  <input class="type-text" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта">
-                  <label for="signin-email" class="visually-hidden">Введите адрес электронной почты</label>
-                </span>
-                <span class="form-password">
-                  <input class="type-text"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль">
-                  <label for="signin-password" class="visually-hidden">Введите пароль</label>
-                </span>
-                <div class="button-container">
-                  <p class="form-submit">
-                    <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
-                  </p>
-                  <p class="signin-links">
-                    <a class="recovery-password" href="#">
-                      <span class="links">Забыли пароль?</span>
-                    </a>
-                    <a class="new-user" href="#">
-                      <span class="links">Новая регистрация</span>
-                    </a>
-                  </p>
-                </div>
-              </form>
-
+            <div class="signin-popup">
+                <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
+                  <span class="form-email">
+                    <input class="form-email-input" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты">
+                  </span>
+                  <span class="form-password">
+                    <input class="form-password-input"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль" aria-label="Введите пароль">
+                  </span>
+                  <div class="button-container">
+                    <p class="form-submit">
+                      <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
+                    </p>
+                    <p class="signin-links">
+                      <a class="recovery-password" href="#">
+                        <span class="links">Забыли пароль?</span>
+                      </a>
+                      <a class="new-user" href="#">
+                        <span class="links">Новая регистрация</span>
+                      </a>
+                    </p>
+                  </div>
+                </form>
             </div>
           </li>
         </ul>
@@ -366,16 +361,13 @@
         <p class="callback-header">Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru/" id="callback-form" method="GET">
         <p class="callback-name">
-          <input class="type-text"  type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?">
-          <label for="callback-text-name" class="visually-hidden">Как вас зовут?</label>
+          <input class="type-text"  type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?" aria-label="Введите имя пользователя.">
         </p>
         <p class="callback-mail">
-          <input class="type-text"  type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?">
-          <label for="callback-text-mail" class="visually-hidden">Ваша почта?</label>
+          <input class="type-text"  type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?" aria-label="Введите адрес почты.">
         </p>
         <p class="callback-area">
-          <textarea class="type-text"  name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-          <label for="callback-text-area" class="visually-hidden">Напишите что-нибудь.</label>
+          <textarea class="type-text"  name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь."></textarea>
         </p>
           <button class="callback-submit btn" type="submit" form="callback-form">Отправить</button>
         </form>
