@@ -10,15 +10,14 @@
   <body>
 
     <header class="header-wrap">
-      <div class="header-item1">
-        <div class="header-logo">
-          <a>
-            <img src="img/logo.svg" width="150" height="150" alt="Логотип интернет-магазина Gllacy.">
-          </a>
-        </div>
-        <nav class="menu">
+      <nav class="menu header-item1">
           <h3 class="visually-hidden">Основная навигация интернет магазина Gllacy</h3>
           <ul class="menu-list">
+            <li class="header-logo">
+              <a href="#">
+                <img src="img/logo.svg" width="154" height="58" alt="Логотип интернет-магазина Gllacy.">
+              </a>
+            </li>
             <li class="menu-item item-active">
               <a href="#" class="menu-link">
                 <span>Каталог</span>
@@ -52,71 +51,72 @@
               </a>
             </li>
           </ul>
-        </nav>
-      </div>
+      </nav>
       <div class="header-item2">
-        <div class="search-block">
-          <a class="link-search" href="#">
-            <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
-              <path class="search-svg-path" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
-            </svg>
-          </a>
-          <div class="search-form-wrap">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
-              <input class="form-search-input" type="text" name="search-form" placeholder="Что ищем?">
-            </form>
+        <div class="header-icon">
+          <div class="search-block">
+            <a class="link-search" href="#">
+              <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
+                <path class="search-svg-path" fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
+              </svg>
+            </a>
+            <div class="search-form-wrap">
+              <form class="search-form" action="https://echo.htmlacademy.ru/" id="search-form" method="GET">
+                <input class="form-search-input" type="text" name="search-form" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+          <ul class="user-profile">
+            <li class="profile-signin">
+              <a class="signin-link" href="#" aria-label="Вход в личный кабинет">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
+                  <g class="signin-svg" fill="#fff">
+                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                  </g>
+                </svg>
+                <span class="signin-txt">Вход</span>
+              </a>
+              <div class="signin-popup">
+                  <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
+                    <span class="form-email">
+                      <input class="form-email-input" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты">
+                    </span>
+                    <span class="form-password">
+                      <input class="form-password-input"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль" aria-label="Введите пароль">
+                    </span>
+                    <div class="button-cont">
+                      <p class="form-submit">
+                        <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
+                      </p>
+                      <p class="popup-links">
+                        <a class="recovery-password" href="#">
+                          <span class="links">Забыли пароль?</span>
+                        </a>
+                        <a class="new-user" href="#">
+                          <span class="links">Новая регистрация</span>
+                        </a>
+                      </p>
+                    </div>
+                  </form>
+              </div>
+            </li>
+          </ul>
+          <div class="shipcart-block">
+            <span class="item-shipcart shipcart">
+                <a  class="shipcart-link" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+                    <circle class="shipcart-icon" fill="#ffffff" cx="6.984" cy="18" r="2"/>
+                    <circle class="shipcart-icon"  fill="#ffffff" cx="15.984" cy="18" r="2"/>
+                    <path class="shipcart-icon"  fill="#ffffff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+                  </svg>
+                  <span class="shipcart-total-empty">Пусто</span>
+                </a>
+            </span>
           </div>
         </div>
-        <ul class="user-profile">
-          <li class="profile-signin">
-            <a class="signin-link" href="#" aria-label="Вход в личный кабинет">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19">
-                <g class="signin-svg" fill="#fff">
-                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                  <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                </g>
-              </svg>
-              <span>Вход</span>
-            </a>
-            <div class="signin-popup">
-                <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
-                  <span class="form-email">
-                    <input class="form-email-input" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты">
-                  </span>
-                  <span class="form-password">
-                    <input class="form-password-input"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль" aria-label="Введите пароль">
-                  </span>
-                  <div class="button-container">
-                    <p class="form-submit">
-                      <button class="signin-button btn" type="submit" name="button" form="signin-form">Войти</button>
-                    </p>
-                    <p class="signin-links">
-                      <a class="recovery-password" href="#">
-                        <span class="links">Забыли пароль?</span>
-                      </a>
-                      <a class="new-user" href="#">
-                        <span class="links">Новая регистрация</span>
-                      </a>
-                    </p>
-                  </div>
-                </form>
-            </div>
-          </li>
-        </ul>
-        <div class="shipcart-block">
-          <span class="item-shipcart shipcart">
-              <a  class="shipcart-link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                  <circle class="shipcart-icon" fill="#ffffff" cx="6.984" cy="18" r="2"/>
-                  <circle class="shipcart-icon"  fill="#ffffff" cx="15.984" cy="18" r="2"/>
-                  <path class="shipcart-icon"  fill="#ffffff" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-                </svg>
-                <span class="shipcart-total-empty">Пусто</span>
-              </a>
-          </span>
-        </div>
         <p class="time-work">
-          <b>С 10 до 20, ежедневно</b>
+          <b>С 10 до 20, ежедневно</b><br>
           <a href="tel:88124502525">8 812 450-25-25</a>
         </p>
       </div>
