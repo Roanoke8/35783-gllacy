@@ -126,34 +126,32 @@
       </div>
     </header>
 
-    <main>
-        <section class="slider">
-          <h3 class="visually-hidden">Слайды</h3>
-          <ul class="slider-list">
-            <li id="brulee" class="list-image1">
-              <img src="img/ice-cream-main1.png" width="150" height="150" alt="Мороженное крем-брюле и пломбир с малиновым джемом.">
-              <p>Крем-брюле и пломбир с малиновым джемом</p>
-            </li>
-            <li class="list-image2">
-              <img src="img/ice-cream-main2.png" width="150" height="150" alt="Мороженное шоколадный пломбир и лимонный сорбет.">
-              <p>Шоколадный пломбир и лимонный сорбет</p>
-            </li>
-            <li class="list-image3">
-              <img src="img/ice-cream-main3.png" width="150" height="150" alt="Мороженое пломбир с помадкой и клубничный щербет.">
-              <p>Пломбир с помадкой и клубничный щербет</p>
-            </li>
-          </ul>
-        </section>
+    <main class="main-container">
 
         <section class="control-block">
           <h3 class="visually-hidden">Панель управления</h3>
           <span class="radio-switch">
-            <input class="visually-hidden" type="radio" id="switch1" name="switch" checked>
-            <label for="switch1" class="switch-modify"></label>
-            <input class="visually-hidden" type="radio" id="switch2" name="switch">
-            <label for="switch2" class="switch-modify"></label>
-            <input class="visually-hidden" type="radio" id="switch3" name="switch">
-            <label for="switch3" class="switch-modify"></label>
+            <label class="switch-modify">
+              <input class="input-hidden radio-slide" type="radio" id="switch1" name="switch" checked>
+              <span class="custom-radio-slide"></span>
+              <div class="slider slide-image1">
+                <p>Крем-брюле и пломбир с малиновым джемом</p>
+              </div>
+            </label>
+            <label class="switch-modify">
+              <input class="input-hidden radio-slide" type="radio" id="switch2" name="switch">
+              <span class="custom-radio-slide"></span>
+              <div class="slider slide-image2">
+                <p>Шоколадный пломбир и лимонный сорбет</p>
+              </div>
+            </label>
+            <label class="switch-modify">
+              <input class="input-hidden radio-slide" type="radio" id="switch3" name="switch">
+              <span class="custom-radio-slide"></span>
+              <div class="slider slide-image3">
+                <p>Пломбир с помадкой и клубничный щербет</p>
+              </div>
+            </label>
           </span>
           <p class="control-button">
             <a class="control-button btn" href="#">Давайте оба!</a>

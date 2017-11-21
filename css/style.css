@@ -61,7 +61,6 @@ button {
 .btn {
   font-family: inherit;
   color: #fefefe;
-
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.64);
@@ -80,7 +79,6 @@ button {
 .btn:active {
   font-family: inherit;
   color: #fefefe;
-
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   background-color: rgba(0, 0, 0, 0.07);
@@ -112,7 +110,9 @@ button {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   list-style: none;
 
@@ -306,9 +306,15 @@ button {
   margin-right: 5px;
 }
 .profile-signin > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 7px 16px;
 
   font-weight: 500;
@@ -402,6 +408,8 @@ button {
   border-radius: 19px;
 }
 .button-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
 }
@@ -422,12 +430,20 @@ button {
 .shipcart-table {
   border-spacing: 0 15px;
 
-  box-shadow: 0 1px 0 rgba(153, 153, 153, 0.2);
+  -webkit-box-shadow: 0 1px 0 rgba(153, 153, 153, 0.2);
+
+          box-shadow: 0 1px 0 rgba(153, 153, 153, 0.2);
 }
 .item-shipcart a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px 34px 6px 16px;
 
   font-weight: 400;
@@ -461,9 +477,16 @@ button {
 }
 
 .shipcart-foo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 16px 11px;
 }
 .rows-total b {
@@ -482,7 +505,6 @@ button {
   font-family: inherit;
   color: #fefefe;
   color: #fefefe;
-
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   border-radius: 30px;
@@ -629,7 +651,6 @@ button {
   text-decoration: none;
   text-shadow: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -1077,9 +1098,15 @@ button {
   border: none;
 }
 .fatty-filter-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 36px;
   padding: 0 16px 0 5px;
 
@@ -1087,8 +1114,12 @@ button {
   border-radius: 30px;
 }
 .radio-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 10px;
 
   font-weight: 500;
@@ -1121,9 +1152,15 @@ button {
   border: none;
 }
 .filler-inner-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 36px;
   padding: 0 16px 0 20px;
 
@@ -1144,8 +1181,12 @@ button {
   background-size: contain;
 }
 .checkbox-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 10px;
 
   font-weight: 500;
@@ -1163,13 +1204,21 @@ button {
 }
 /* flexbox*/
 .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 22px;
 }
 .nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 560px;
 }
 .header-wrap {
@@ -1184,16 +1233,28 @@ button {
   text-align: right;
 }
 .header-item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
 .header-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 267px;
   padding-right: 1px;
   padding-bottom: 11px;
@@ -1223,4 +1284,108 @@ button {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.control-block {
+  margin-top: 462px;
+  padding-left: 23px;
+  padding-right: 106px;
+}
+.slider {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 309px;
+  z-index: -1;
+  height: 881px;
+  width: 1045px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+
+
+}
+.slider p{
+  width: 670px;
+  margin-top: 392px;
+}
+.slide-image1 {
+  background-image: url(../img/ice-cream-main1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -9px;
+  left: 309px;
+  z-index: -1;
+  height: 881px;
+  width: 1045px;
+}
+.slide-image2 {
+  background-image: url(../img/ice-cream-main2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  top: -9px;
+  left: 309px;
+  z-index: -1;
+  height: 859px;
+  width: 1065px;
+}
+.slide-image3 {
+  background-image: url(../img/ice-cream-main3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  top: -9px;
+  left: 309px;
+  z-index: -1;
+  height: 854px;
+  width: 1079px;
+}
+.control-button {
+  margin: 0 auto;
+}
+.custom-radio-slide::before {
+  display:inline-block;
+  width: 21px;
+  height: 21px;
+  content: "";
+  border-radius: 50%;
+  background-image: url(../img/radio-off.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.custom-radio-slide:nth-child(2) {
+  margin-left: 5px;
+}
+.custom-radio-slide:nth-child(3) {
+  margin-left: 5px;
+}
+.radio-slide:checked + .custom-radio-slide::before {
+  background-color: #ffffff;
+}
+.radio-slide:checked ~ .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
