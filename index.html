@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -288,28 +289,32 @@
 
         <section class="news-block">
           <h3 class="visually-hidden">Наши новости</h3>
-          <article class="news-item">
-            <h3 class="visually-hidden">Новости нашего блога</h3>
-            <p class="news-header">Новое в нашем блоке</p>
-            <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+          <article class="news-item news-item-bg1">
+            <div class="news-container-left">
+              <h3 class="visually-hidden">Новости нашего блога</h3>
+              <p class="news-header">Новое в нашем блоке</p>
+              <a class="news-link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+            </div>
           </article>
-          <div class="news-item">
-            <p class="news-content">
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-              что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
-            <form action="https://echo.htmlacademy.ru/" id="subscribe-form" method="GET">
-              <input class="type-text" type="text" name="subscribe-form" placeholder="Электронная почта">
-              <button class="subscribe-button btn" type="submit" form="subscribe-form">Отправить</button>
-            </form>
+          <div class="news-item news-item-bg2">
+            <div class="news-container-right">
+              <p class="news-content">
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+                что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+              <form action="https://echo.htmlacademy.ru/" id="subscribe-form" method="GET">
+                <input class="type-text" type="text" name="subscribe-form" placeholder="Электронная почта">
+                <button class="subscribe-button btn" type="submit" form="subscribe-form">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
     </main>
 
-    <section class="address-block">
-      <div class="address-inner">
+    <section class="address-wrap">
+      <iframe class="mapcart" src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e0aa41214fe2c09736e5388233282c7286b250edd844b0e11febc20da74abd&amp;source=constructor" width="1200" height="428" frameborder="0"></iframe>
+      <div class="address-block">
         <h3 class="visually-hidden">Наше местонахождение</h3>
-        <div class="address-maps"></div>
         <div class="address-item">
           <p class="address-content">
             Адрес главноего офиса и офлайн магазина:
@@ -323,9 +328,10 @@
           <a href="#callback" class="callback-button btn">Форма обратной связи</a>
         </div>
       </div>
+
     </section>
 
-    <footer>
+    <footer class="footer-wrap">
       <div class="footer-social">
         <h3 class="visually-hidden">Список социальных сетей.</h3>
         <ul class="social-list">
@@ -356,10 +362,14 @@
         </ul>
       </div>
       <nav class="footer-menu" aria-label="Дополнительная навигация по сайту.">
-        <a class="links fmenu-bold" href="#">Для поставщиков</a>
-        <a class="links" href="#">Наши документы</a>
-        <a class="links" href="#">О производстве</a>
-        <a class="links" href="#">Экологические стандарты</a>
+        <div class="footer-menu-container">
+          <a class="links fmenu-bold" href="#">Для поставщиков</a>
+          <a class="links" href="#">Наши документы</a>
+        </div>
+        <div class="footer-menu-container">
+          <a class="links" href="#">О производстве</a>
+          <a class="links" href="#">Экологические стандарты</a>
+        </div>
       </nav>
       <div class="footer-banner">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy 2017">
@@ -384,5 +394,7 @@
         </form>
       </div>
     </section>
+
+
   </body>
 </html>
