@@ -1,3 +1,6 @@
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+*, *::before, *::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
 body {
   margin: 0;
   padding: 0;
@@ -10,17 +13,8 @@ body {
 
   background-color: #849d8f;
 }
-.menu-list,
-.popup-menu-list,
-.user-profile,
-.slider-list,
-.hits-list,
-.seo-list,
-.social-list,
-.catalog-list,
-.breadcrumbs-list,
-.page-list,
-.footer-social {
+
+.list-reset {
   margin: 0;
   padding: 0;
 
@@ -694,7 +688,7 @@ button {
 }
 .catalog-price {
   position: absolute;
-  top: 191px;
+  top: 205px;
 }
 .catalog-price .price-val {
   font-weight: 700;
@@ -724,7 +718,7 @@ button {
 }
 .product-foo {
   width: 251px;
-  margin: 0 auto;
+  margin: 6px auto;
 
   text-align: center;
 }
@@ -774,6 +768,8 @@ button {
   color: #323232;
 }
 .news-header {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 1.375;
   text-align: left;
@@ -1363,6 +1359,7 @@ button {
 .main-container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 27px;
 }
 
 .control-block {
@@ -1372,7 +1369,6 @@ button {
   align-items: baseline;
   margin-top: 462px;
   padding-right: 106px;
-  padding-left: 23px;
 
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
@@ -1447,7 +1443,7 @@ button {
   background-size: contain;
 }
 .control-button {
-  margin: 0 auto;
+  margin: 1px auto 0 353px;
 }
 .custom-radio-slide::before {
   content: "";
@@ -1480,8 +1476,7 @@ button {
   justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 42px auto;
-  padding: 0 27px;
+  margin: 41px auto;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1592,7 +1587,7 @@ button {
 .catalog-block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 40px auto;
+  margin: 40px auto 0 ;
 }
 .hits-list,
 .catalog-list {
@@ -1600,7 +1595,6 @@ button {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  margin: 0 27px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -1615,7 +1609,7 @@ button {
 }
 .hits-item,
 .catalog-item {
-  width: 267px;
+  width: 266px;
 }
 .catalog-item {
   margin-bottom: 40px;
@@ -1624,13 +1618,13 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 1146px;
-  margin: 0 auto;
-  padding: 20px 20px 20px 20px;
+  margin: 32px auto 0;
+  padding: 20px 0 0 0 ;
 
   background-image: url(../img/index-wafers.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .seo-header {
   margin: 0;
@@ -1658,9 +1652,8 @@ button {
   justify-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 43px auto;
-  padding: 0 27px;
-
+  margin: 0 auto;
+  margin-top: 43px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
@@ -1672,13 +1665,12 @@ button {
 .news-item-bg1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 80px;
   padding-left: 19px;
-
-  background-image: url(../img/index-news-blog.jpg);
+  background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: -28px -68px;
 }
 .news-item-bg2 {
   -webkit-box-sizing: border-box;
@@ -1688,6 +1680,9 @@ button {
   background-image: url(../img/bg-post.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+.news-container-left {
+  width: 285px;
 }
 .news-container-right {
   -webkit-box-sizing: border-box;
@@ -1753,6 +1748,7 @@ button {
 .main-container-catalog {
   width: 1200px;
   margin: 17px auto;
+  padding: 0 27px;
 }
 .breadcrumbs-block {
   padding-left: 24px;
