@@ -5,7 +5,6 @@ body {
   margin: 0;
   padding: 0;
 
-  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
   font-family: "Roboto", Arial, sans-serif;
@@ -823,6 +822,10 @@ button {
   line-height: 30px;
   text-align: left;
   color: #323232;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 1px;
+
 }
 
 .news-content {
@@ -830,12 +833,17 @@ button {
   line-height: 1.375;
   text-align: left;
   color: rgb(90, 90, 90);
+  margin: 0;
+    padding: 0;
 }
 .subscribe-button {
   width: 129px;
-  height: 44px;
-
+  padding: 11px 0;
+  font-weight: 700;
+  font-size: 18px;
   border-radius: 30px;
+  font-family: "Roboto";
+  margin-left: 7px;
 }
 .address-block {
   position: absolute;
@@ -1419,7 +1427,7 @@ button {
 .main-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 27px;
+  padding: 0 28px;
 }
 
 .control-block {
@@ -1429,92 +1437,59 @@ button {
   align-items: baseline;
   margin-top: 462px;
   padding-right: 106px;
-
+position: relative;
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
 }
 .slider {
+    width: 677px;
   content: "";
   position: absolute;
+  display: block;
   top: -9px;
   left: 309px;
-  z-index: -1;
+  font-size: 60.468px;
+    font-family: "Roboto";
+  font-weight: bold;
+    line-height: 1.006;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: none;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 1045px;
-  height: 881px;
-
-  -webkit-box-align: center;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-box-pack: start;
-  -ms-flex-align: center;
-  -ms-flex-pack: start;
-}
-.slider p {
-  width: 670px;
-  margin-top: 392px;
-}
-.slide-image1 {
-  top: -9px;
-  left: 309px;
-  z-index: 0;
-
-  width: 1045px;
-  height: 881px;
-
-  background-image: url(../img/ice-cream-main1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.slide-image2 {
-  top: -9px;
-  left: 309px;
-  z-index: -1;
-
-  display: none;
-  width: 1065px;
-  height: 859px;
-
-  background-image: url(../img/ice-cream-main2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+.slide-image1,
+.slide-image2,
 .slide-image3 {
-  top: -9px;
-  left: 309px;
-  z-index: -1;
-
   display: none;
-  width: 1079px;
-  height: 854px;
+  top: -148px;
+  left: 236px;
 
-  background-image: url(../img/ice-cream-main3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
+
 .control-button {
-  margin: 1px auto 0 353px;
+  margin: 1px auto 0 355px;
 }
 .switch-modify::before {
   content: "";
-
   display: inline-block;
-  width: 19px;
-  height: 19px;
-
+  width: 20px;
+  height: 20px;
   border: 2px solid #ffffff;
   border-radius: 50%;
+  vertical-align: baseline;
+  margin-left: 1px;
+  margin-bottom: 1px;
 }
+.switch-modify:nth-child(2)::before {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.switch-modify:nth-child(3)::before {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
 .radio-slide:checked ~ .switch-modify::before {
   background-color: #8996a6;
 }
@@ -1539,7 +1514,16 @@ button {
   background-position: 309px -8px;
 }
 
-
+.radio-slide[id="switch1"]:checked ~ .site-wrapper label[for="switch1"]::before,
+.radio-slide[id="switch2"]:checked ~ .site-wrapper label[for="switch2"]::before,
+.radio-slide[id="switch3"]:checked ~ .site-wrapper label[for="switch3"]::before {
+  background-color: #ffffff;
+}
+.radio-slide[id="switch1"]:checked ~ .site-wrapper .slide-image1,
+.radio-slide[id="switch2"]:checked ~ .site-wrapper .slide-image2,
+.radio-slide[id="switch3"]:checked ~ .site-wrapper .slide-image3 {
+  display: block;
+}
 .radio-slide:checked ~ label::before {
   background-color: #ffffff;
 }
@@ -1571,13 +1555,12 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 23px 0 0 0;
-  padding: 0 6px 0 0;
-
-  font: Roboto;
+  padding: 0 6px 0 3px;
+  font-family: "Roboto";
   font-size: 100%;
+  font-weight: 700;
   vertical-align: baseline;
   letter-spacing: 1px;
-
   border: 0;
 }
 .banner-bg1 {
@@ -1700,8 +1683,7 @@ button {
           box-sizing: border-box;
   width: 1146px;
   margin: 32px auto 0;
-  padding: 20px 0 0 0 ;
-
+  padding: 25px 0 23px 21px;
   background-image: url(../img/index-wafers.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1709,13 +1691,13 @@ button {
 }
 .seo-header {
   margin: 0;
+  font-weight: 500;
 }
 .seo-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
-  justify-content: space-between;
   padding-right: 9px;
   padding-left: 57px;
 
@@ -1724,7 +1706,23 @@ button {
   -ms-flex-wrap: wrap;
 }
 .seo-item {
-  width: 475px;
+  width: 477px;
+  padding-left: 0px;
+  margin-top: 21px;
+}
+.seo-item:first-child,
+.seo-item:nth-child(3) {
+  margin-right: 90px;
+}
+.seo-item:nth-child(3) {
+  margin-top: 23px;
+}
+.seo-item:last-child{
+    margin-top: 22px;
+}
+.seo-item p {
+  margin: 0;
+  padding: 0;
 }
 .news-block {
   display: -webkit-box;
@@ -1734,7 +1732,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
-  margin-top: 43px;
+  margin-top: 40px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
@@ -1756,7 +1754,7 @@ button {
 .news-item-bg2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 7px;
+  padding: 5px 5px 5px 6px;
 
   background-image: url(../img/bg-post.svg);
   background-repeat: no-repeat;
@@ -1765,22 +1763,35 @@ button {
 .news-container-left {
   width: 285px;
 }
+.news-container-left a{
+}
 .news-container-right {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 35px;
-  padding-right: 19px;
+  box-sizing: border-box;
+  padding-top: 29px;
+  padding-right: 12px;
   padding-bottom: 35px;
-  padding-left: 20px;
-
+  padding-left: 22px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
   background-color: #f8f7f4;
   border-radius: 15px;
 }
+.subscribe-input {
+  padding: 11px 0 11px 13px;
+      width: 368px;
+      border-radius: 5px;
+      font-family: "Roboto";
+}
+.subscribe-form {
+  margin-top: 36px;
+}
 .address-wrap {
   position: relative;
-
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
+  margin-top: 40px;
+
 }
 .mapcart {
   background-image: url(../img/maps.jpg);
@@ -1888,4 +1899,8 @@ button {
   margin-top: 18px;
   margin-left: 24px;
   padding-top: 10px;
+}
+}
+}}
+
 }
