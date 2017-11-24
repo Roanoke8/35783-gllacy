@@ -11,9 +11,11 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
 
-  background-color: #849d8f;
 }
+.site-wrapper {
+  background-color: #849d8f;
 
+}
 .list-reset {
   margin: 0;
   padding: 0;
@@ -150,7 +152,8 @@ button {
 }
 .menu-item > a:active {
   color: #323232;
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.9);
+  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.9);
+          box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.9);
   background-color: #f7f6f3;
 }
 
@@ -1379,8 +1382,13 @@ button {
 .popup-links {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
 }
 .popup-links a {
@@ -1456,7 +1464,7 @@ button {
 .slide-image1 {
   top: -9px;
   left: 309px;
-  z-index: -1;
+  z-index: 0;
 
   width: 1045px;
   height: 881px;
@@ -1497,7 +1505,7 @@ button {
 .control-button {
   margin: 1px auto 0 353px;
 }
-.custom-radio-slide::before {
+.switch-modify::before {
   content: "";
 
   display: inline-block;
@@ -1507,13 +1515,32 @@ button {
   border: 2px solid #ffffff;
   border-radius: 50%;
 }
-.custom-radio-slide:nth-child(2) {
-  margin-left: 5px;
+.radio-slide:checked ~ .switch-modify::before {
+  background-color: #8996a6;
 }
-.custom-radio-slide:nth-child(3) {
-  margin-left: 5px;
+.radio-slide[id="switch1"]:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url(../img/ice-cream-main1.png);
+  background-repeat: no-repeat;
+  background-position: 309px -8px;
+
+
 }
-.radio-slide:checked + .custom-radio-slide::before {
+.radio-slide[id="switch2"]:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url(../img/ice-cream-main2.png);
+  background-repeat: no-repeat;
+  background-position: 309px -8px;
+}
+.radio-slide[id="switch3"]:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url(../img/ice-cream-main3.png);
+  background-repeat: no-repeat;
+  background-position: 309px -8px;
+}
+
+
+.radio-slide:checked ~ label::before {
   background-color: #ffffff;
 }
 .radio-slide:checked ~ .slider {
@@ -1848,7 +1875,8 @@ button {
   position: absolute;
   height: 406px;
   padding: 5px 10px 0 13px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 5px;
   background-color: rgba(248, 247, 244, 0.2);
   width: 293px;
