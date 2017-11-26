@@ -1551,13 +1551,13 @@ position: relative;
 .switch-modify:nth-child(3)::before {
   margin-left: 5px;
 }
-.radio-slide:checked ~ .switch-modify:first-child::before {
+/*.radio-slide:checked ~ .switch-modify:first-child::before {
   background-color: #8996a6;
 
 }
 .radio-slide:checked ~ .switch-modify::before {
   background-color: #8996a6;
-}
+}*/
 .radio-slide[id="switch1"]:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url(../img/ice-cream-main1.png);
@@ -1576,7 +1576,6 @@ position: relative;
   background-repeat: no-repeat;
   background-position: center -8px;
 }
-.site-wrapper
 .radio-slide[id="switch1"]:checked ~ .site-wrapper label[for="switch1"]::before,
 .radio-slide[id="switch2"]:checked ~ .site-wrapper label[for="switch2"]::before,
 .radio-slide[id="switch3"]:checked ~ .site-wrapper label[for="switch3"]::before {
