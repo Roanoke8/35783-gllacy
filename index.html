@@ -23,7 +23,7 @@
                 <h3 class="visually-hidden">Основная навигация интернет магазина Gllacy</h3>
 
                 <ul class="menu-list list-reset">
-                  <li class="menu-item">
+                  <li class="menu-item  menu-aligment">
                     <a href="#" class="menu-link">
                       <span>Каталог</span>
                     </a>
@@ -84,10 +84,10 @@
                   <div class="signin-popup">
                     <form class="signin-main-form" action="https://echo.htmlacademy.ru/" id="signin-form" method="POST">
                       <span class="form-email">
-                        <input class="form-email-input" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты">
+                        <input class="input-txt" type="text" name="signin-form" id="signin-email" placeholder="Электронная почта" aria-label="Введите адрес электронной почты">
                       </span>
                       <span class="form-password">
-                        <input class="form-password-input"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль" aria-label="Введите пароль">
+                        <input class="input-txt"  type="password" name="signin-form" id="signin-password" value="" placeholder="Пароль" aria-label="Введите пароль">
                       </span>
                       <div class="button-cont">
                         <p class="form-submit">
@@ -293,7 +293,7 @@
                     Честно =)
                   </p>
                   <form action="https://echo.htmlacademy.ru/" id="subscribe-form" class="subscribe-form" method="GET">
-                    <input class="type-text subscribe-input" type="text" name="subscribe-form" placeholder="Электронная почта">
+                    <input class="type-tex-t subscribe-input" type="text" name="subscribe-form" placeholder="Электронная почта">
                     <button class="subscribe-button btn" type="submit" form="subscribe-form">Отправить</button>
                   </form>
                 </div>
@@ -302,7 +302,7 @@
         </main>
 
         <section class="address-wrap">
-          <iframe class="mapcart" src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e0aa41214fe2c09736e5388233282c7286b250edd844b0e11febc20da74abd&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+          <iframe class="mapcart" src="https://yandex.ru/map-widget/v1/?um=constructor%3A62e0aa41214fe2c09736e5388233282c7286b250edd844b0e11febc20da74abd&amp;source=constructor"></iframe>
           <div class="address-block">
             <h3 class="visually-hidden">Наше местонахождение</h3>
             <div class="address-item">
@@ -378,22 +378,29 @@
             <p>Сделано в <a class="links" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
           </div>
         </footer>
-        <section id="callback" class="popup-callback">
-          <h3 class="visually-hidden">Форма обратной связи</h3>
-          <div class="callback-inner">
-            <p class="callback-header">Мы обязательно вам ответим!</p>
-            <form action="https://echo.htmlacademy.ru/" id="callback-form" method="GET">
-            <p class="callback-name">
-              <input class="type-text"  type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?" aria-label="Введите имя пользователя.">
-            </p>
-            <p class="callback-mail">
-              <input class="type-text"  type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта?" aria-label="Введите адрес почты.">
-            </p>
-            <p class="callback-area">
-              <textarea class="type-text"  name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь."></textarea>
-            </p>
-              <button class="callback-submit btn" type="submit" form="callback-form">Отправить</button>
-            </form>
+        <section>
+          <div id="callback" class="popup-callback">
+            <div class="popup-callback-inner">
+              <p class="callback-button-close">
+                <button type="submit" class="button-close"></button>
+              </p>
+              <h3 class="visually-hidden">Форма обратной связи</h3>
+              <div class="callback-inner">
+                <p class="callback-header">Мы обязательно вам ответим!</p>
+                <form class="callback-form" action="https://echo.htmlacademy.ru/" id="callback-form" method="GET" >
+                <p class="callback-name">
+                  <input class="type-text"  type="text" id="callback-text-name" name="callback-form" placeholder="Как вас зовут?" aria-label="Введите выше имя." required>
+                </p>
+                <p class="callback-mail">
+                  <input class="type-text"  type="text" id="callback-text-mail" name="callback-form" placeholder="Ваша почта для ответа?" aria-label="Введите адрес почты." required>
+                </p>
+                <p class="callback-area">
+                  <textarea class="type-text"  name="callback-form" id="callback-text-area" cols="30" rows="10" placeholder="Напишите что-нибудь..." aria-label="Напишите что-нибудь."></textarea>
+                </p>
+                  <button class="callback-submit btn" type="submit" form="callback-form">Отправить</button>
+                </form>
+                </div>
+            </div>
           </div>
         </section>
       </div>
