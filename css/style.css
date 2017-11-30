@@ -26,6 +26,8 @@ body {
 }
 .body-catalog {
   background-color: #849d8f;
+  background-image: url(../img/backlighting-catalog.png);
+  background-repeat: repeat-x;
 }
 .site-wrapper {
   min-width: 1200px;
@@ -138,7 +140,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 19px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
   list-style: none;
 
@@ -160,9 +162,7 @@ button {
 
 .menu-link:hover {
   padding: 6px 13px;
-
   color: #323232;
-
   background-color: #f7f6f3;
   border-radius: 30px;
 }
@@ -274,11 +274,21 @@ button {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.popup-menu-item:active a{
+  background-color: #f6b5a5;
+}
 .popup-menu-item:last-child:active a {
-  background-color: #fbded7;
+  background-color: #f6b5a5;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.popup-menu-item:first-child:active a {
+  background-color: #f6b5a5;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+
 
 .active-item {
   color: #ffffff;
