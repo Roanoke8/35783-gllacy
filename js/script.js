@@ -12,8 +12,8 @@ function init () {
             iconLayout: 'default#image',
             iconImageClipRect: [[0,0], [82, 142]],
             iconImageHref: 'img/pin.png',
-            iconImageSize: [60, 90],
-            iconImageOffset: [-40, -90],
+            iconImageSize: [90, 150],
+            iconImageOffset: [-60, -140],
         });
 
     myMap.geoObjects.add(myPlacemark1)
