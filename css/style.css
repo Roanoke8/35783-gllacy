@@ -1831,6 +1831,13 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+.site-wrapper::after {
+  background-image: url(../img/ice-cream-main2.png);
+}
+.site-wrapper::before {
+  background-image: url(../img/ice-cream-main3.png);
+
+}
 .banner-block {
   display: -webkit-box;
   display: -ms-flexbox;
