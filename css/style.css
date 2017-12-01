@@ -554,8 +554,13 @@ button {
   -ms-flex-align: center;
   -ms-flex-pack: center;  ;
 }
-.full-shipcart > a {
+.full-shipcart > a{
   padding: 7px 15px 6px 16px;
+  background-color: #f8f7f4;
+}
+.full-shipcart .shipcart-total-empty {
+  color: #323232;
+
 }
 .shipcart-rows {
   font-weight: 400;
@@ -1803,6 +1808,9 @@ button {
 .switch-modify::before:focus {
   outline-color: rgba(46, 136, 228, 0.54);
 
+}
+.switch-modify::before:hover {
+  background-color: rgba(248, 247, 244, 0.4);
 }
 
 .switch-modify:nth-child(2)::before {
