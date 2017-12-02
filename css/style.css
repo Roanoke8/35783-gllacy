@@ -40,10 +40,8 @@ body {
 
   list-style: none;
 }
-table {
-  border-spacing: 0;
-}
-button {
+
+.button-reset {
   margin: 0;
   padding: 0;
 
@@ -132,7 +130,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding-top: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
 
   list-style: none;
 
@@ -685,7 +683,7 @@ button {
 .shipcart-position-img img {
   width: 33px;
   height: 33px;
-
+  vertical-align: middle;
   border-radius: 50%;
 }
 .shipcart-position-artical {
