@@ -25,12 +25,16 @@ body {
   color: #ffffff;
 }
 .body-catalog {
+  padding-top: 10px;
+
   background-color: #849d8f;
   background-image: url(../img/backlighting-catalog.png);
   background-repeat: repeat-x;
+
 }
 .site-wrapper {
   min-width: 1200px;
+  padding-top: 10px;
 
   background-color: #849d8f;
 }
@@ -63,9 +67,9 @@ body {
   border: 0;
 
   clip: rect(0 0 0 0);
-          clip-path: inset(100%);
 
   -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 .input-hidden {
   display: none;
@@ -126,7 +130,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 19px;
@@ -499,7 +503,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   height: 100%;
   margin-top: 20px;
 
@@ -527,7 +531,7 @@ body {
   background-color: #f8f7f4;
   border-radius: 5px;
   -webkit-box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);  ;
+          box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .shipcart-table {
@@ -768,7 +772,7 @@ body {
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   border-radius: 30px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-          box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);  ;
+          box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 .banner-heading {
   margin: 0;
@@ -935,8 +939,6 @@ body {
 .news-link:active {
   color: #e84d37;
 }
-
-
 .news-content {
   margin: 0;
   padding: 0;
@@ -1024,7 +1026,7 @@ body {
   align-items: center;
   width: 252px;
   height: 44px;
-  margin-top: 26px;
+  margin-top: 24px;
 
   font-size: 18px;
   line-height: 24px;
@@ -1035,7 +1037,7 @@ body {
   -webkit-box-align: center;
   -webkit-box-pack: center;
   -ms-flex-align: center;
-  -ms-flex-pack: center;;
+  -ms-flex-pack: center;
 }
 .social-item img {
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -1281,6 +1283,7 @@ body {
   height: 37px;
   margin-top: 4px;
   padding: 0 11px 0 14px;
+  border: none;
 
   font-size: 16px;
   line-height: 18px;
@@ -1299,10 +1302,12 @@ body {
      -moz-appearance: none;
           appearance: none;
 }
+.filter-sort select::-ms-expand {
+  display: none;
+}
 
 .filter-sort select:focus {
-  border: 1px solid rgba(46, 136, 228, 0.52);
-  outline: 0;
+  outline: 1;
 }
 .filter-sort option {
   font-size: 14px;
@@ -1705,7 +1710,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 400px;
 
@@ -1881,19 +1886,19 @@ body {
   background-color: #849d8f;
   background-image: url(../img/ice-cream-main1.png);
   background-repeat: no-repeat;
-  background-position: center -8px;
+  background-position: center 0px;
 }
 .radio-slide[id="switch2"]:checked ~ .site-wrapper {
   background-color: #8996a6;
   background-image: url(../img/ice-cream-main2.png);
   background-repeat: no-repeat;
-  background-position: center -8px;
+  background-position: center 0px;
 }
 .radio-slide[id="switch3"]:checked ~ .site-wrapper {
   background-color: #9d8b84;
   background-image: url(../img/ice-cream-main3.png);
   background-repeat: no-repeat;
-  background-position: center -8px;
+  background-position: center 0px;
 }
 .radio-slide[id="switch1"]:checked ~ .site-wrapper label[for="switch1"]::before,
 .radio-slide[id="switch2"]:checked ~ .site-wrapper label[for="switch2"]::before,
@@ -2055,15 +2060,11 @@ body {
   -ms-flex-pack: justify;
 }
 .catalog-list {
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 
   -ms-flex-wrap: wrap;
 }
-/*
-.catalog-list .catalog-item:first-child,
-.catalog-list .catalog-item:nth-child(5n) {
-  margin-left: 4px;
-}*/
+
 .catalog-invisible-button {
   display: none;
 }
@@ -2096,7 +2097,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-right: 9px;
   padding-left: 57px;
 
@@ -2330,7 +2331,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   align-content: center;
   align-items: center;
   -webkit-box-sizing: border-box;
