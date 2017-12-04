@@ -2,7 +2,7 @@
 
 function init () {
     var myMap = new ymaps.Map('map', {
-            center: [59.940025, 30.328998],
+            center: [59.938806, 30.327303],
             zoom: 16
         }),
 
