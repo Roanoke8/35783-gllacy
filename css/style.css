@@ -1963,6 +1963,7 @@ body {
   padding-left: 18px;
 
   background-image: url(../img/raspberries.jpg);
+  background-color: #540203;
   background-repeat: repeat;
   background-position: center;
 }
@@ -2013,6 +2014,7 @@ body {
   padding-left: 19px;
 
   background-image: url(../img/chokolate.jpg);
+  background-color: #594332;
   background-repeat: repeat;
   background-position: center;
 }
@@ -2085,6 +2087,7 @@ body {
   padding: 25px 0 23px 21px;
 
   background-image: url(../img/index-wafers.jpg);
+  background-color: #f3e4cd;
   background-position: 50% 50%;
   border-radius: 15px;
 }
@@ -2185,6 +2188,7 @@ body {
   padding-left: 19px;
 
   background-image: url(../img/strawberry.jpg);
+  background-color: #ffffff;
   background-repeat: repeat;
   background-position: -28px -68px;
 }
@@ -2194,6 +2198,7 @@ body {
   padding: 5px 5px 5px 6px;
 
   background-image: url(../img/bg-post.svg);
+  background-color: #f8f7f4;
   background-position: center;
 }
 .news-container-left {
@@ -2288,7 +2293,7 @@ body {
   width: 100%;
   height: 429px;
 
-  background-image: url(../img/maps.png);
+  background-image: url(../img/maps.jpg);
   background-repeat: no-repeat;
   border: none;
 }
