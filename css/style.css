@@ -359,33 +359,30 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 .form-search-input {
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 311px;
-  padding: 9px 0 9px 13px;
+  padding: 13px 10px 13px 13px;
 
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
   font-family: "Roboto", Arial, sans-serif;
   text-align: left;
   color: #999999;
 
   background-color: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d3d3d2;
+  border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
 .form-search-input:focus {
-  padding: 8px 10px 8px 12px;
+  padding: 12px 10px 12px 12px;
 
   font-weight: 700;
   font-family: "Roboto", Arial, sans-serif;
   color: #323232;
 
-  border: none;
   border: 2px solid rgba(46, 136, 228, 0.52);
   border-radius: 5px;
   outline: 0;
@@ -838,9 +835,9 @@ body {
   content: "";
 
   display: inline-block;
-  width: 32px;
+  width: 33px;
   height: 38px;
-
+  vertical-align: baseline;
   background-image: url(../img/ruble.svg);
   background-repeat: no-repeat;
   background-position: 4px 5px;
@@ -849,6 +846,8 @@ body {
           filter: drop-shadow(1px 0px 1px rgba(49, 50, 53, 0.48));
 }
 .catalog-price small {
+  margin-left: -1px;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 45px;
