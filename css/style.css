@@ -387,6 +387,11 @@ body {
   outline: 0;
 }
 .user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 
   margin-left: 10px;
@@ -397,7 +402,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 7px 16px;
+  padding: 7px 17px 7px 14px;
 
   font-weight: 500;
   font-size: 14px;
@@ -427,9 +432,7 @@ body {
 .signin-link:hover .signin-svg {
   fill: #000000;
 }
-.profile-signin {
-  height: 100%;
-}
+
 .profile-signin:hover .signin-popup {
   display: block;
 }
@@ -506,6 +509,11 @@ body {
   -ms-flex-wrap: wrap;
 }
 .shipcart-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
 
   margin-left: 10px;
@@ -1748,11 +1756,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 267px;
-  margin-left: 316px;
+  min-width: 267px;
+  margin-left: auto;
+  margin-right: 0;
   padding-top: 13px;
   padding-right: 1px;
-  padding-bottom: 11px;
+  padding-bottom: 20px;
   padding-left: 3px;
 
   -webkit-box-align: center;
