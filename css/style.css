@@ -131,7 +131,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   padding-top: 19px;
   padding-bottom: 19px;
@@ -174,7 +173,7 @@ body {
 }
 
 .menu-item {
-  height: 100%;
+  padding-bottom: 15px;
 }
 .menu-item > a:active {
   color: #323232;
@@ -1810,7 +1809,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   align-items: baseline;
-  margin-top: 462px;
+  margin-top: 457px;
   padding-right: 106px;
 
   -webkit-box-align: baseline;
