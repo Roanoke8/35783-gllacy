@@ -2067,7 +2067,7 @@ body {
   -ms-flex-wrap: wrap;
 }
 .catalog-item {
-  margin-bottom: 37px;
+  margin-bottom: 30px;
 }
 .seo-block {
   -webkit-box-sizing: border-box;
@@ -2161,7 +2161,7 @@ body {
           box-sizing: border-box;
   margin: 0 auto;
   margin-top: 40px;
-  padding: 0 13px;  
+  padding: 0 13px;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -2175,8 +2175,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 23px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
   padding-left: 19px;
+  padding-right: 220px;
 
   background-image: url(../img/strawberry.jpg);
   background-color: #ffffff;
@@ -2192,10 +2193,8 @@ body {
   background-color: #f8f7f4;
   background-position: center;
 }
-.news-container-left {
-  width: 285px;
-}
 .news-container-right {
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 29px;
@@ -2392,8 +2391,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
-  margin-top: 45px;
-  padding-right: 25px;
+  margin-top: 33px;
+  padding-right: 37px;
   padding-bottom: 31px;
 
   text-align: right;
@@ -2412,6 +2411,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 293px;
+  height: 100%;
   padding: 7px 13px 0 13px;
 
 }
