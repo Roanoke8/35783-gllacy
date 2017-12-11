@@ -72,7 +72,22 @@ body {
           clip-path: inset(100%);
 }
 .input-hidden {
-  display: none;
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 .header-logo {
   margin: 0;
@@ -1869,6 +1884,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  outline: 1px;
 }
 .switch-modify::before:focus {
   outline-color: rgba(46, 136, 228, 0.54);
@@ -1884,13 +1900,7 @@ body {
 .switch-modify:nth-child(3)::before {
   margin-left: 5px;
 }
-/*.radio-slide:checked ~ .switch-modify:first-child::before {
-  background-color: #8996a6;
 
-}
-.radio-slide:checked ~ .switch-modify::before {
-  background-color: #8996a6;
-}*/
 .radio-slide[id="switch1"]:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url(../img/ice-cream-main1.png);
@@ -1913,6 +1923,7 @@ body {
 .radio-slide[id="switch2"]:checked ~ .site-wrapper label[for="switch2"]::before,
 .radio-slide[id="switch3"]:checked ~ .site-wrapper label[for="switch3"]::before {
   background-color: #ffffff;
+  outline: 1px;
 }
 .radio-slide[id="switch1"]:checked ~ .site-wrapper .slide-image1,
 .radio-slide[id="switch2"]:checked ~ .site-wrapper .slide-image2,
@@ -1922,10 +1933,19 @@ body {
 .radio-slide:checked ~ label::before {
   background-color: #ffffff;
 }
+.radio-slide[id="switch1"]:focus ~ .site-wrapper label[for="switch1"]::before,
+.radio-slide[id="switch2"]:focus ~ .site-wrapper label[for="switch2"]::before,
+.radio-slide[id="switch3"]:focus ~ .site-wrapper label[for="switch3"]::before {
+  outline: 1px solid rgba(46, 136, 228, 0.52);
+}
 .radio-slide:checked ~ .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.site-wrapper::after,
+.site-wrapper::before {
+  content: "";
 }
 .site-wrapper::after {
   background-image: url(../img/ice-cream-main2.png);
@@ -2165,9 +2185,6 @@ body {
 
   background-image: url(../img/thermometer.svg);
 }
-
-
-
 .news-block {
   display: -webkit-box;
   display: -ms-flexbox;
