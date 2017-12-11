@@ -96,7 +96,7 @@ body {
 }
 .btn {
   font-family: "Roboto", Arial, sans-serif;
-  color: #fefefe;
+  color: #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   -webkit-box-shadow: 0 1px 2px 0 rgba(172, 16, 0, 0.64);
@@ -105,7 +105,7 @@ body {
 }
 .btn:hover {
   font-family: "Roboto", Arial, sans-serif;
-  color: #fefefe;
+  color: #ffffff;
 
   background: #f17b64;
   -webkit-box-shadow: inset 0 -2px 2px #ac1000;
@@ -114,7 +114,7 @@ body {
 
 .btn:active {
   font-family: "Roboto", Arial, sans-serif;
-  color: #fefefe;
+  color: #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, from(#e74a35), to(#f26843));
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   background-color: rgba(0, 0, 0, 0.07);
