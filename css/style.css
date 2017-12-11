@@ -126,6 +126,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #323232;
 }
+
 .menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1199,8 +1200,9 @@ body {
 .callback-area .type-text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 428px;
-  height: 155px;
+  min-width: 428px;
+  min-height: 155px;
+  max-height: 155px;
   padding: 9px 13px;
 
   font-weight: 400;
@@ -1215,6 +1217,14 @@ body {
   border-style: solid;
   border-color: rgba(178, 178, 178, 52);
   border-radius: 5px;
+}
+.callback-input-hover:hover {
+  padding: 12px 10px 12px 12px;
+  border: 2px solid #d3d3d2;
+}
+.callback-area-hover:hover{
+  padding: 8px 10px 12px 12px;
+  border: 2px solid #d3d3d2;
 }
 .callback-submit {
   display: block;
