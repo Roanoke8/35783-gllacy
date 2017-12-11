@@ -375,6 +375,10 @@ body {
   border: 1px solid #d3d3d2;
   border-radius: 5px;
 }
+.form-search-input:hover {
+  padding: 12px 10px 12px 12px;
+  border: 2px solid #d3d3d2;
+}
 .form-search-input:focus {
   padding: 12px 10px 12px 12px;
 
