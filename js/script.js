@@ -47,9 +47,9 @@ form.addEventListener("submit", function (evt) {
 }
 });
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (modal.classList.contains("popup-callback-show")) {
-        modal.classList.remove("popup-callback-show");
-      }
+  if (evt.keyCode === 27) {
+    if (modal.classList.contains("popup-callback-show")) {
+      modal.classList.remove("popup-callback-show");
     }
-  });
+  }
+});
