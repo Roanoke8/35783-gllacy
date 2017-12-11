@@ -320,12 +320,12 @@ body {
   -ms-flex-align: center;
   -ms-flex-pack: center;
 }
-.link-search:hover {
+.search-block:hover .link-search {
   color: black;
 
   background-color: #f8f7f4;
 }
-.link-search:hover .search-svg-path {
+.search-block:hover .search-svg-path {
   fill: #323232;
 }
 .search-block {
@@ -421,20 +421,21 @@ body {
 .signin-txt {
   margin-left: 7px;
 }
-.signin-link:hover {
+
+.profile-signin:hover .signin-svg {
+  fill: #000000;
+}
+
+.profile-signin:hover .signin-popup {
+  display: block;
+}
+.profile-signin:hover .signin-link{
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #323232;
 
   background-color: #f8f7f4;
-}
-.signin-link:hover .signin-svg {
-  fill: #000000;
-}
-
-.profile-signin:hover .signin-popup {
-  display: block;
 }
 .signin-popup {
   position: absolute;
@@ -654,14 +655,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
 }
-.shipcart-link:hover {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
 
-  background-color: #f8f7f4;
-}
 .shipcart-total {
   font-weight: 500;
   font-size: 14px;
@@ -711,6 +705,14 @@ body {
 }
 .item-shipcart:hover .shipcart-total-empty {
   color: #323232;
+}
+.item-shipcart:hover .shipcart-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4;
 }
 .link-search {
   color: black;
